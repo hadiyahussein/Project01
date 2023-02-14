@@ -1,0 +1,107 @@
+@import './variables';
+
+.contact-main{
+    position: relative;
+    height: 600px;
+}
+
+.contact-blog {
+    background-image: url(../assets/contact-header-1.jpg);
+    height: 500px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: $primaryhighlight;
+    display: flex;
+    align-items:flex-end;
+   
+
+    fieldset{
+    border: none;
+    padding: 50px;
+
+    input[type=name], 
+    input[type=email], 
+    input[type=text],
+    button {
+        margin: 20px auto;
+        border: none;
+       
+    }
+
+    input[type=name], 
+    input[type=email] {
+        border-bottom: 2px solid #0E902D;
+        background-color: transparent;
+        padding: 20px;
+        font-family: $basefont;
+        font-weight: lighter;
+    }
+
+
+    input[type=email] {
+        float:right ;
+    }
+  
+    input[type=text] {
+        border: 2px solid #0E902D;
+        height: 300px;
+        width: 100%;
+        background-color: transparent;
+        padding: 15px;
+        font-family: $basefont;
+        font-weight: lighter;
+    }
+  
+  button {
+    background-color: #0E902D;
+    border: none;
+    color:white;
+    min-width: 320px; 
+    width:100%;
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+    }
+ 
+}
+
+.contact-blog .wrapper h1{
+    padding-bottom: 50px;
+    width: 30%;      
+    font-size: 4rem;  
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: -200px;
+    
+        .contact-info{
+            width: 25%;
+        }
+        .input{
+            width: 67%;
+            background-color: white;
+            box-shadow: -20px 20px $primaryhighlight;
+        }
+        
+}
+
+.contact-info{
+    align-self:flex-end;
+   
+    .info-icon>* {
+        padding: 7px;
+        color: #0E902D;
+        font-size: 1.2rem;
+    }
+}
+
+.contact-info>*{
+    padding: 10px ;
+    letter-spacing: 1.2px;
+}
+
+.fa-brands.fa-facebook-f{
+    padding-left: 0px;
+}

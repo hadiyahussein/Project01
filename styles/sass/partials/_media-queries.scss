@@ -1,0 +1,182 @@
+@import './variables';
+
+@media (max-width: 900px) {
+
+    html{
+        font-size: 90%;
+        overflow-x: hidden;
+    }
+
+    .hidden-nav{
+        display: none;
+    }  
+
+    .home .header-container{
+        .header-container-img {
+            top: 40px;
+        }
+        .header-container-text {
+            bottom: 50px;
+            h1{
+            font-size: 2.5rem;
+            }
+        } 
+    }
+    
+    .info-container{
+        margin: 50px auto;
+        width: 100%;
+        p{
+        font-size:0.9rem;
+        }
+      
+    }
+
+    .info2{
+        gap: 50px;
+        flex-wrap: wrap;
+
+        h3{
+            margin: 0px 5px;
+        }
+        
+        .upcoming {
+            width:100%; 
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+
+            .upcoming-img {
+                margin-left: 20px;
+                width: 95%; 
+            }
+
+            .upcoming-text{
+                padding: 55px 20px;
+                margin-top: 0px;
+                text-align: left;
+            }
+        }
+
+        .discover{
+            width: 100%;
+
+            .discover-img{
+                bottom: 50px;
+                width: 95%;
+            }
+
+            .discover-text{
+                padding: 20px 18px;
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .text-gallery {
+        margin: 0;
+        
+        .text-gallery-container .text-gallery-container-box{
+        width: 100%;
+        }
+
+        .text-gallery-container .text-gallery-container-box .text-gallery-container-box-text > * {
+            padding: 15px;
+        }
+
+        h3{
+            font-size: 1.9rem;
+        }
+    }
+
+    .founder{
+        padding: 20px 0;
+        .founder-container{
+          flex-direction: column;
+          text-align: center;
+
+          .founder-text{
+            padding: 30px;
+            font-size:0.9rem ;
+
+            p{
+                line-height: 20px;
+            }
+
+            h2{
+                text-align: center;   
+                font-size: 2rem;   
+            }
+                
+          }
+
+          .founder-img{
+            padding: 40px;
+          }
+        }
+    }
+
+    .contact{
+        flex-direction: column-reverse;
+        top: 0px;
+        
+    
+        .input{
+            width: 90%;
+            margin-top: 50px;
+            button{
+                min-width: 210px;
+            }
+        }
+    }
+
+    .contact .contact-info{
+        width: 100%;
+        padding: 30px;
+        margin: 0;
+        .info-text{
+            font-size: 0.7rem;
+        }
+    }
+    
+    .navbar ul {
+        padding: 10px;
+        justify-content: space-between;
+       
+        .fa-solid.fa-bars  {
+            display: block;
+            font-size: large;
+        }
+    }
+
+    .gallery{
+        padding: 40px 0;
+    }
+
+    form {
+        width:100%;
+        fieldset input[type="name"], fieldset input[type="email"], fieldset input[type="text"], fieldset button{
+            
+            float: none;
+            width: auto;
+            
+        }
+        
+    }
+    
+    
+    
+    .contactblog{
+        height: 300px;
+        h1{
+            width: 100%;
+            margin: 0 auto;
+            text-align: center
+        }
+    }
+    
+}
+
+
+
+
+

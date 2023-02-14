@@ -1,0 +1,77 @@
+@import './variables';
+
+html {
+    font-size: 125%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:$primarycolor;
+    font-family: $basefont;
+    color: $secondarycolor;
+    font-weight: normal;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h3,
+h2,
+h1,
+p,
+button,
+i,
+li
+{
+    padding: 0;
+    margin:0;
+}
+
+button {
+    display: inline;
+    background-color:$secondaryhighlight;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: normal;
+    border: none;
+    line-height: 32px;
+    padding: 5px 30px;
+    font-size: 1rem;
+    font-family:$basefont;
+}
+
+.fas {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0 0 2px #888;
+    padding: 0.5em 0.6em;
+  
+}
+
+a{
+
+    text-decoration: none;
+    font-style: none; 
+    color:$primarycolor; 
+    font-size:0.9rem;            
+}
+a:hover {
+    color: $primaryhighlight;
+}  
+

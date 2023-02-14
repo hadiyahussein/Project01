@@ -1,0 +1,236 @@
+@import './variables';
+
+main{
+    position: relative;
+}
+
+.page-content {
+    min-height: calc(100vh - 100px);
+    padding: 20px;
+}
+
+.nav {
+    background-color: rgb(4, 12, 4);
+    height: auto;
+    color: white;
+
+    .navbar ul {
+        display: flex;
+        padding: 15px;
+        gap: 50px;
+        align-items:baseline;
+        
+        .fa-bars {
+            display: none; 
+        }
+
+        .home {
+            color: $primaryhighlight;
+        }
+        .logo {
+            font-size: 2rem;
+        }
+    }
+}
+
+.blog {
+    background-image: url(../assets/blog-header-1.jpg);
+    height: 500px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: $primaryhighlight;
+    display: flex;
+    align-items:flex-end;
+    h1{
+        padding-bottom: 170px;
+        
+    }
+}
+
+.side-bar {
+    width: 40%;
+    margin-top: 400px;
+    
+    .side-bar-image {
+        background-image: url(../assets/side-bar-image.jpg);
+        background-size:contain ;
+        background-repeat: no-repeat;
+        width: 433px;
+        height: 366px;
+        position: absolute;
+       
+    }
+    .side-bar-text {
+        margin-left: 50px;
+        padding: 20px 40px;
+        background-color: white;
+        width: 70%;
+        font-size: 1rem;
+        margin-top: 20px;
+
+
+        .side-bar-text-recent {
+            h3{
+                padding-bottom:10px;
+            }
+        }
+
+
+        .side-bar-text-about{
+        padding-top: 350px;
+        padding-bottom: 80px;
+        a{
+            font-family: $basefont;
+            text-decoration: none;
+            font-style: italic; 
+            color:$tertiaryhighlight; 
+            font-size:0.9rem;  
+            font-weight: bold;
+            a:hover {
+                
+                text-decoration:none; 
+                cursor:pointer;  
+            }             
+        }
+            h3{
+                padding: 10px 0;
+            }
+                
+        }
+    }
+}
+
+.side-bar  {
+
+    .side-bar ul{
+        font-size: 1rem;
+        line-height: normal;
+    }
+
+    li::before {
+        content: "• ";
+        color: $secondaryhighlight; 
+    }
+
+}
+
+.section1{
+    display: flex;
+    position: absolute;
+    top: -300px;
+   
+    
+   .post{
+        width: 60%;
+
+        .post-img {
+            box-shadow: -20px 20px  $primaryhighlight;
+        }
+
+        .post-text {
+            border-left: 5px solid  $primaryhighlight;
+            border-bottom: 5px solid  $primaryhighlight;
+            position: relative;
+            left: -20px;
+            padding: 40px;
+            text-align: left;
+        }
+    }
+}
+
+.post {
+    text-align: left;
+    .post h2 {
+        padding: 50px;
+        text-align: left;
+    }
+    .text{
+        color: $tertiaryhighlight;
+        font-weight: normal;
+        padding-left: 6px;
+    }
+    .post-text p{
+        padding-top: 50px;
+    }  
+}
+
+
+.comments {
+    padding: 60px 40px;
+    h2{
+        padding-bottom: 40px;
+    }
+    .comments-container {
+        padding: 25px 0;
+        display: flex;
+        .comments-container-img {
+            width: 40%;
+            margin-top: 5px ;
+        }
+
+        .comments-container-text h5{
+            font-family: $basefont;
+            font-weight: bolder;
+            font-size: 1rem;
+        }
+        .comments-container-text > * {
+            margin: 10px;
+        }
+    }
+}
+
+
+
+fieldset{
+    border: none;
+
+    input[type=name], 
+    input[type=email], 
+    input[type=text],
+    button {
+        margin: 20px auto;
+        border: none;
+       
+    }
+
+    input[type=name], 
+    input[type=email] {
+        border-bottom: 2px solid #0E902D;
+        background-color: transparent;
+        padding: 20px;
+        font-family: $basefont;
+        font-weight: lighter;
+    }
+
+
+    input[type=email] {
+        float:right ;
+    }
+  
+    input[type=text] {
+        border: 2px solid #0E902D;
+        height: 300px;
+        width: 100%;
+        background-color: transparent;
+        padding: 15px;
+        font-family: $basefont;
+        font-weight: lighter;
+    }
+  
+  button {
+    background-color: #0E902D;
+    border: none;
+    color:white;
+    min-width: 320px; 
+    width:100% ;
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+}
+
+.section1 {
+    min-height: calc(100vh - 100px);
+    padding: 20px;
+}
+
+  
