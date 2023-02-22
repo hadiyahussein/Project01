@@ -8,17 +8,15 @@
     background-repeat: no-repeat;
     color: white;
 
-    .fa-bars {
-        display: none; 
-    }
 
+    .fa-bars{
+        display: none;
+    }
     .navbar ul {
         display: flex;
         padding: 15px;
         gap: 50px;
         align-items:baseline;
-        
-        
 
         .home {
             color: $primaryhighlight;

@@ -10,7 +10,24 @@
     .hidden-nav{
         display: none;
     }  
-
+    .navbar .fa-bars {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 24px;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul li {
+        margin: 10px 0;
+    }
+    .hidden-nav.show {
+        display: block;
+      }
     .home .header-container{
         .header-container-img {
             top: 40px;
@@ -137,16 +154,23 @@
             font-size: 0.7rem;
         }
     }
-    
-    .navbar ul {
-        padding: 10px;
-        justify-content: space-between;
-       
-        .fa-solid.fa-bars  {
-            display: block;
-            font-size: large;
-        }
+
+    .hidden-nav{
+        display: none;
+    }  
+
+      
+    .navbar .fa-bars {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 24px;
     }
+     
+    
+
 
     .gallery{
         padding: 40px 0;

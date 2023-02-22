@@ -607,6 +607,29 @@ p {
   .hidden-nav {
     display: none;
   }
+  .navbar .fa-bars {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .navbar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .navbar ul li {
+    margin: 10px 0;
+  }
+  .hidden-nav.show {
+    display: block;
+  }
   .home .header-container .header-container-img {
     top: 40px;
   }
@@ -718,15 +741,16 @@ p {
   .contact .contact-info .info-text {
     font-size: 0.7rem;
   }
-  .navbar ul {
-    padding: 10px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .hidden-nav {
+    display: none;
   }
-  .navbar ul .fa-solid.fa-bars {
+  .navbar .fa-bars {
     display: block;
-    font-size: large;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
   }
   .gallery {
     padding: 40px 0;
